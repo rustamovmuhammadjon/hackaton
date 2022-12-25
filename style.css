@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.box {
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    border: 1.5px solid #E5E7EA;
+    background-color: #ffffff;
+    display: flex;
+}
+
+.first-parent {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.first-child {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.first-child__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+}
+
+.first-child__text {
+    width: 100% ;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #555555;
+}
+
+.second-child {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.components {
+    width: 200px;
+    height: 160px;
+    padding: 15px;
+    background: #F5F5F5;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.components-icon {
+    align-self: flex-end;
+    color: #000000;
+    margin-top: 8px;
+    margin-right: 7px;
+}
+
+.components-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.components:hover {
+    background: #299764;
+}
+
+.components:hover .components-icon {
+    color: #ffffff;
+}
+
+.components:hover .components-text {
+    color: #ffffff;
+}
+
+.second-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: 526px;
+    position: relative;
+}
+
+.ellipse {
+    width: 300px;
+    height: 300px;
+}
+
+.man {
+    width: 386px;
+    height: 452px;
+    margin-top: -280px;
+}
+
+@media (min-width: 561px) and (max-width: 834px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .box {
+        margin-top: 100px;
+        width: 100%;
+        height: 500px;
+        border-radius: 20px;
+        border: 1.5px solid #E5E7EA;
+        background-color: #ffffff;
+        display: flex;
+    }
+    
+    .first-parent {
+        margin: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: calc(100%-526px);
+    }
+    
+    .first-child {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .first-child__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        color: #000000;
+    }
+    
+    .first-child__text {
+        width: 590px;
+    }
+    
+    .second-child {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .components {
+        width: 200px;
+        height: 160px;
+        padding: 15px;
+        background: #F5F5F5;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .components-icon {
+        align-self: flex-end;
+        color: #000000;
+        margin-top: 8px;
+        margin-right: 7px;
+    }
+    
+    .components-text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+    }
+    
+    .components:hover {
+        background: #299764;
+    }
+    
+    .components:hover .components-icon {
+        color: #ffffff;
+    }
+    
+    .components:hover .components-text {
+        color: #ffffff;
+    }
+    
+    .second-parent {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        width: 526px;
+        position: relative;
+    }
+    
+    .ellipse {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .man {
+        width: 386px;
+        height: 452px;
+        margin-top: -280px;
+    }
+}
+
+@media (min-width: 459px) and (max-width:560px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .box {
+        margin-top: 100px;
+        width: 100%;
+        height: 732px;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    
+    .first-parent {
+        padding: 14px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        gap: 40px;
+    }
+    
+    .first-child {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .first-child__title {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    
+    .first-child__text {
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .second-child {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .components {
+        width: 100%;
+        height: 106px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .components-icon {
+        align-self: flex-end;
+        margin-top: 8px;
+        margin-right: 7px;
+    }
+    
+    .components-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .second-parent {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: auto;
+        position: relative;
+    }
+    
+    .ellipse {
+        width: 160px;
+        height: 160px;
+        position: absolute;
+        top: -80px;
+        right: -80px;
+    }
+    
+    .man {
+        display: none;
+        margin-top: 0px;
+    }
+}
+@media (min-width: 390px) and (max-width:459px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .box {
+        margin-top: 100px;
+        width: 100%;
+        height: 732px;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    
+    .first-parent {
+        padding: 14px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        gap: 40px;
+    }
+    
+    .first-child {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .first-child__title {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    
+    .first-child__text {
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .second-child {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .components {
+        width: 100%;
+        height: 106px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .components-icon {
+        align-self: flex-end;
+        margin-top: 8px;
+        margin-right: 7px;
+    }
+    
+    .components-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .second-parent {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: auto;
+        position: relative;
+    }
+    
+    .ellipse {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: -50px;
+        right: -50px;
+    }
+    
+    .man {
+        display: none;
+        margin-top: 0px;
+    }
+}
